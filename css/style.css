@@ -41,8 +41,7 @@ a:focus {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    width: 288px;
     margin: 0 auto;
 }
 
@@ -52,11 +51,11 @@ a:focus {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
+    line-height: 1.16; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    margin-right: 149px;
 }
 
 .logo-part {
@@ -97,8 +96,8 @@ a:focus {
 }
 
 .header-container {
-    display: flex;
-    padding: 0 15px;   
+    display: flex; 
+    padding: 17.5px 0;
 }
 
 .nav {
@@ -141,8 +140,8 @@ a:focus {
 /*-----------------------SECTION-HERO-----------------------------*/
 
 .section-hero {
-    max-width: 1440px;
-    height: 600px;
+    max-width: 320px;
+    height: 432px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
@@ -150,20 +149,22 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
-    padding: 188px 0; 
+    padding: 72px 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .section-hero-title {
     color: #FFFFFF;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 288px;
     text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     margin: 0 auto;
-    margin-bottom: 58px;
+    margin-bottom: 72px;
 }
 
 .section-hero-btn {
@@ -174,10 +175,10 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color:#ffffff;
-    cursor:pointer;
+    cursor: pointer;
     display: block;
-    min-width:169px;
-    height:56px;
+    min-width: 169px;
+    height: 56px;
     border: none;
     border-radius: 4px;
     margin: 0 auto;
@@ -197,8 +198,9 @@ a:focus {
 
 .section-feature {
     color: #2e2f42;
-    padding: 120px 0; 
+    padding: 96px 0; 
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -213,10 +215,12 @@ a:focus {
 }
 
 .features {
-    width:1158px;
+    width: 288px;
     display: flex;
-    align-items:center;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px;
 }
 
 .icon {
@@ -231,10 +235,12 @@ a:focus {
 }
 
 .features-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em; 
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
     margin-bottom: 8px; 
 }
 
@@ -243,9 +249,9 @@ a:focus {
     letter-spacing: 0.02em;
 }
 
-.features-item {
-    width: calc((100% - 72px) / 4);
-}
+/* .features-item {
+    width: calc((100% - 72px));
+} */
 
 /*----------------------------------------------------------------*/
 /*-----------------------SECTION-TEAM------------------------------*/
@@ -253,8 +259,8 @@ a:focus {
 .section-team {
     background-color: #F4F4FD;
     width: 100%;
-    height: 732px;
-    padding: 120px 0; 
+    height: 2232px;
+    padding: 96px 0; 
 }
 
 .section-team-title {
@@ -264,15 +270,15 @@ a:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42;
-    margin-bottom:72px;
-    gap:24px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 24px;
-
+    gap: 72px;
 }
 
 .team-member {
@@ -292,7 +298,7 @@ a:focus {
 
 .member-list {
     border-radius: 0px 0px 4px 4px; 
-    width: calc((100% - 72px) / 4); 
+    /* width: calc((100% - 72px) / 4);  */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -346,8 +352,8 @@ a:focus {
 /*----------------------SECTION-PORTFOLIO-----------------------*/
 
 .section-portfolio {
-    padding-top: 120px; 
-    padding-bottom: 120px;
+    padding-top: 96px; 
+    padding-bottom: 96px;
 }
 
 .portfolio-title {
@@ -364,12 +370,13 @@ a:focus {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap; 
-    column-gap: 24px; 
+    flex-direction: column;
+    align-items: center;
     row-gap: 48px;
 }
 
 .portfolio {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     border-radius: 0px 0px 4px 4px; 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -414,8 +421,8 @@ a:focus {
 
 .box {
     position: relative;
-    width: 360px;
-    height: 300px;
+    width: 288px;
+    height: 280px;
     margin: 0 auto;
     background-color: #bdbdbd;
     overflow: hidden;
@@ -443,11 +450,11 @@ a:focus {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo-description {
-    margin-right: 120px;
 }
 
 .footer-logo {
@@ -480,11 +487,15 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    
 }
 
 .footer-icon-media {
     width: 40px;
     height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-icon-links {
@@ -780,4 +791,12 @@ a:focus {
 .footer-form-icon {
     fill: #FFFFFF;
     margin-left: 16px; 
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1158px) {
+    
 }
