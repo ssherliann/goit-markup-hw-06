@@ -1,6 +1,6 @@
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
         padding: 0;
     }
 
@@ -411,5 +411,18 @@
 
     .footer-input {
         opacity: inherit;
+    }
+}
+
+@media (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-image.jpg);
+    }
+
+    .member-list {
+        
     }
 }
