@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/modal.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,8 +16,15 @@
 <header class="header">
     <div class="container header-container">
         <nav class="navigation">
+            <div class="nav-menu">
                 <a class="header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-            <!-- <ul class="nav">
+                <button type="button" class="menu-open-btn">
+                    <svg class="mob-open-icon-btn" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="nav">
                 <li><a class="header-link current" href="./index.html">Studio</a></li>
                 <li><a class="header-link" href="">Portfolio</a></li>
                 <li><a class="header-link" href="">Contacts</a></li>
@@ -26,7 +35,57 @@
                 <li><a class="header-link-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="header-link-address" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
-        </address> -->
+        </address>
+    </div>
+    <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+            <svg class="mob-icon-btn" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mob-menu-navigation">
+        <ul class="mob-menu-list">
+            <li><a class="mob-menu-link current" href="./index.html">Studio</a></li>
+            <li><a class="mob-menu-link" href="">Portfolio</a></li>
+            <li><a class="mob-menu-link" href="">Contacts</a></li>
+        </ul>
+        </nav>
+        <address class="mob-address">
+            <ul class="mob-address-list">
+                <li><a class="mob-address-link current" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li><a class="mob-address-link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </address>
+        <ul class="mob-menu-icon-list">
+            <li class="icon-media">
+                <a class="link-icon" href="">
+                    <svg class="svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-media">
+                <a class="link-icon" href="">
+                    <svg class="svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-media">
+                <a class="link-icon" href="">
+                    <svg class="svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-media">
+                <a class="link-icon" href="">
+                    <svg class="svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 <main>
@@ -41,38 +100,38 @@
             <h2 class="visually-hidden">Features</h2>
                 <ul class="features">
                     <li class="features-item">
-                        <!-- <div class="icon">
+                        <div class="icon">
                             <svg class="antenna-svg" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
-                        </div> -->
+                        </div>
                         <h3 class="features-title">Strategy</h3>
                         <p class="features-title-description">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
                     </li>
                     <li class="features-item">
-                        <!-- <div class="icon">
+                        <div class="icon">
                             <svg class="clock-svg" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
-                        </div> -->
+                        </div>
                         <h3 class="features-title">Punctuality</h3>
                         <p class="features-title-description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     <li class="features-item">
-                        <!-- <div class="icon">
+                        <div class="icon">
                             <svg class="diagram-svg" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
-                        </div> -->
+                        </div>
                         <h3 class="features-title">Diligence</h3>
                         <p class="features-title-description">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
                     <li class="features-item">
-                        <!-- <div class="icon">
+                        <div class="icon">
                             <svg class="astronaut-svg" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
-                        </div> -->
+                        </div>
                         <h3 class="features-title">Technologies</h3>
                         <p class="features-title-description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
@@ -240,7 +299,9 @@
             <ul class="portfolio-list">
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/5.jpg" alt="Banking App" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-1.jpg" alt="Banking App">
+                        <img class="box-img-tablet" src="./images/portfolio-tablet-1.jpg" alt="Banking App">
+                        <img class="box-img-pc" src="./images/portfolio-pc-1.jpg" alt="Banking App">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -250,7 +311,9 @@
                 </li>
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/6.jpg" alt="Cashless Payment" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-2.jpg" alt="Cashless Payment">
+                        <img class="box-img-tablet"src="./images/portfolio-tablet-2.jpg" alt="Cashless Payment">
+                        <img class="box-img-pc"src="./images/portfolio-pc-2.jpg" alt="Cashless Payment">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -260,7 +323,9 @@
                 </li>
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/7.jpg" alt="Meditation App" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-3.jpg" alt="Meditation App">
+                        <img class="box-img-tablet" src="./images/portfolio-tablet-3.jpg" alt="Meditation App">
+                        <img class="box-img-pc" src="./images/portfolio-pc-3.jpg" alt="Meditation App">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -270,7 +335,9 @@
                 </li>
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/8.jpg" alt="Taxi Service" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-4.jpg" alt="Taxi Service">
+                        <img class="box-img-tablet" src="./images/portfolio-tablet-4.jpg" alt="Taxi Service">
+                        <img class="box-img-pc" src="./images/portfolio-pc-4.jpg" alt="Taxi Service">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -280,7 +347,9 @@
                 </li>
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/9.jpg" alt="Screen Illustrations" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-5.jpg" alt="Screen Illustrations">
+                        <img class="box-img-tablet" src="./images/portfolio-tablet-5.jpg" alt="Screen Illustrations">
+                        <img class="box-img-pc" src="./images/portfolio-pc-5.jpg" alt="Screen Illustrations">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -290,7 +359,9 @@
                 </li>
                 <li class="portfolio">
                     <div class="box">
-                        <img src="./images/10.jpg" alt="Online Courses" width="360" height="300">
+                        <img class="box-img-mobile" src="./images/portfolio-mobile-6.jpg" alt="Online Courses">
+                        <img class="box-img-tablet" src="./images/portfolio-tablet-6.jpg" alt="Online Courses">
+                        <img class="box-img-pc" src="./images/portfolio-pc-6.jpg" alt="Online Courses">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-description">
@@ -404,7 +475,9 @@
                                 <use href="./images/icons.svg#icon-vector"></use>
                             </svg>
                         </span> 
+                        <span class="label-part">
                         I accept the terms and conditions of the <a href="" class="modal-link">Privacy Policy</a>
+                        </span>  
                     </label>
                 </div>
                 <button type="submit" class="modal-btn-submit">Send</button>
